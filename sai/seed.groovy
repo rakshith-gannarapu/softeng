@@ -15,7 +15,6 @@ object = jsonSlurper.parseText(imagesJson)
 
 for (entry in object.github) {
   folder("${entry.directory}")
-	git clone ${entry.repo}
     pipelineJob("${entry.directory}/${entry.image}") {
         logRotator{
             daysToKeep(90)
