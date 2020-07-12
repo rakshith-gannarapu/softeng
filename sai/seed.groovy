@@ -1,5 +1,5 @@
 import groovy.json.JsonSlurper
-folder("Rakshith/1234")
+folder("Rakshith")
 folder("Rakshith/patchset")
 
 imagesJson = '''{ "github":[{
